@@ -1,0 +1,4 @@
+<!--components/mi_conut/index.wxml-->
+<text bind:tap='decreasefn'>-</text>
+<text>{{count}}</text>
+<text bind:tap='increasefn'>+</text>

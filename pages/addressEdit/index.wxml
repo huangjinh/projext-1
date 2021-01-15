@@ -1,0 +1,2 @@
+<!--pages/addressEdit/index.wxml-->
+<text bind:tap='save'>确定</text>

@@ -1,0 +1,8 @@
+<!--pages/taste/index.wxml-->
+<camera wx:if="{{iscamera}}"  bind:error='failfn'></camera>
+<view wx:else>
+  <text>
+     未授权，点击按钮授权
+  </text>
+  <text bind:tap="scopefn">授权</text>
+</view>

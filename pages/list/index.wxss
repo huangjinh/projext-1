@@ -1,0 +1,125 @@
+/* pages/list/index.wxss */
+.header{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  padding-top:35rpx ;
+  box-sizing: border-box;
+}
+.input{
+  display: inline-block;
+  width: 60%;
+  border:1px solid #eee;
+  text-align: left;
+  height: 60rpx;
+  border-radius: 60rpx;
+  padding-left: 30rpx;
+  font-size: 13px;
+  vertical-align:middle;
+  margin-right: 20rpx;
+}
+.search{
+  display:inline-block;
+  vertical-align:middle;
+  width: 15%;
+  height: 60rpx;
+  background:brown;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  color: #fff;
+  font-size: 15px;
+}
+.nav{
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-bottom:1rpx solid brown;
+  background:#f4f4f4
+}
+.nav>text{
+  flex:1;
+}
+.avtive{
+  color:red;
+}
+.main{
+  width: 100%;
+  height: 82%;
+  overflow: auto;
+}
+.main_list1{
+  background:#eee;
+}
+
+.main_list1>navigator{
+  width: 100%;
+  padding:10rpx;
+  box-sizing: border-box;
+  margin: 2rpx 0;
+  background:#fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_list1>navigator>image{
+  width: 40%;
+}
+.main_list1>navigator .list1text{
+  text-align: left;
+  font-size: 13px;
+  color: #666;
+  width: 60%;
+  line-height: 25px;
+}
+.main_list1>navigator .list1text view:nth-of-type(1){
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.main_list1>navigator .list1text view:nth-of-type(2){
+  font-size: 14px;
+  color: #000;
+}
+.main_list2{
+  width: 100%;
+  padding:10rpx;
+  box-sizing: border-box;
+  margin: 2rpx 0;
+  background:#fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.main_list2>navigator{
+  width: 49%;
+  padding:10rpx; 
+  box-sizing: border-box;
+  border:1px solid #eee;
+  margin:5rpx 0
+}
+.main_list2>navigator>image{
+  width: 100%;
+}
+.main_list2>navigator>.list2text{
+  padding: 10rpx;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #666;
+}
+.main_list2>navigator .list2text view:nth-of-type(1){
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.main_list2>navigator .list2text view:nth-of-type(2){
+  font-size: 14px;
+  color: #000;
+}
+.main_list2>navigator .list2text text:nth-of-type(3){
+  display: block;
+}

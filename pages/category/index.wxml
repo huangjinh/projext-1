@@ -1,0 +1,34 @@
+<!--pages/category/index.wxml-->
+<wxs src='../comm.wxs' module="comm"></wxs>
+<wxs module="getavatar">
+   module.exports=function(listmain,id){
+     if(id===0) return ''
+     for(var i=0;i<listmain.length;i++){
+      if(listmain[i].id===id) return listmain[i].avatar
+     }
+   }
+</wxs>
+  <view class="header">
+  <input type="text" class="input" placeholder="请输入搜索的名字"></input>
+  </view>
+  <view class="mian">
+    <view class="mian_lift hide-scroll">
+      <view wx:for="{{listmain}}" wx:key='id' data-id='{{item.id}}' bindtap="getlistsub">
+      <text class="{{item.id === activeid ? 'active':''}} ">{{item.name}}</text>
+      </view>
+    </view>
+    <view class="main_right hide-scroll">
+      <view class="main_right_content">
+        <image src="{{comm.baseurl+getavatar(listmain,activeid)}}"mode='widthFix' class="avatarimg"></image>
+          <view class='main_right_list' wx:if="{{listsub.length}}">
+            <navigator class='lista' wx:for="{{listsub}}" wx:key='id' url='/pages/list/index?cid={{item.id}}'>
+                  <image mode='widthFix' src="{{comm.baseurl + item.avatar}}"></image>
+                  <text>{{item.name}}</text>
+            </navigator>
+          </view>
+          <text wx:else>暂无相关商品；敬请期待。。。</text>
+      </view>
+    </view>
+  </view>
+
+

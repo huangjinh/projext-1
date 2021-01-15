@@ -1,0 +1,4 @@
+/* pages/address/index.wxss */
+.btn{
+  color:blue;
+}
